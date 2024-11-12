@@ -7,7 +7,7 @@ RUN mkdir -p /home/sip && \
     apt-get update -y && apt-get install -y unzip wget curl git libpython-dev python3 python3-pip python-pip ninja-build clang lld cmake radare2 libncurses5-dev && \
     apt-get upgrade -y --autoremove && \
     python3 -m pip install pip --upgrade && python3 -m pip install r2pipe matplotlib && \
-    python3 -m pip install r2pipe pyelftools
+    python -m pip install 'r2pipe==1.6.5' pyelftools
 
 WORKDIR /home/sip
 
