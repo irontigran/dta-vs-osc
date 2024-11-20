@@ -11,6 +11,11 @@ do
   ./protect.sh $f $1
 done
 
+for f in ./dataset_embench/*.bc
+do
+  ./protect.sh $f $1
+done
+
 for f in ./dataset/input/*
 do
   file_base=${f##*/}
